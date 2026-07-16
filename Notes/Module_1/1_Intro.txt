@@ -1,0 +1,46 @@
+# What are tabular data 
+
+Ashish   22   CSE   89
+Rahul    21   ECE   76
+Neha     22   CSE   91
+Amit     23   ME    68
+
+This is known as tabular data .
+
+We can make this table using the list but the issue is that we have to run
+a loop just to calculate the avg or extract any information.4
+
+# Pandas solve this problem :
+Pandas is a library for working with structured (tabular) data efficiently.
+
+Pandas are specially designed to read , store , clean , analyse and manipulate the tabular data .
+
+Pandas -> Panel data -> means structured data
+
+most of the pipeline in ml is 
+CSV File
+     │
+     ▼
+Pandas
+     │
+     ▼
+Data Cleaning
+     │
+     ▼
+Feature Engineering
+     │
+     ▼
+NumPy Arrays
+     │
+     ▼
+Scikit-learn / PyTorch
+     │
+     ▼
+Machine Learning Model
+
+
+
+
+
+
+

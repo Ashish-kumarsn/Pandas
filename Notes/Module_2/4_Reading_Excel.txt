@@ -1,0 +1,52 @@
+
+READING EXCEL FILES
+
+Purpose
+
+- Reads Excel (.xlsx) files into a DataFrame.
+
+-----------------------------------------
+
+Syntax
+
+df = pd.read_excel("students.xlsx")
+
+-----------------------------------------
+
+Default
+
+Reads the first sheet.
+
+-----------------------------------------
+
+Specific Sheet
+
+df = pd.read_excel(
+    "college.xlsx",
+    sheet_name="Teachers"
+)
+
+or
+
+sheet_name=1
+
+-----------------------------------------
+
+Difference
+
+CSV
+- One table
+- read_csv()
+
+Excel
+- Multiple sheets
+- read_excel()
+
+-----------------------------------------
+
+Common Error
+
+ImportError:
+Install:
+
+pip install openpyxl

@@ -1,0 +1,90 @@
+##DATAFRAME
+
+A DataFrame is a two-dimensional labeled data structure.
+
+basically it is a collection of series . 
+Every series act as a column there .
+
+eg:
+import pandas as pd
+
+df = pd.DataFrame({
+    "Name": ["Ashish","Rahul","Neha"],
+    "Age": [22,21,22],
+    "Branch": ["CSE","ECE","CSE"],
+    "Marks": [89,76,91]
+})
+
+print(df)
+
+output
+      Name  Age Branch  Marks
+0  Ashish   22    CSE     89
+1   Rahul   21    ECE     76
+2    Neha   22    CSE     91
+
+
+Structure:
+- Index
+- Columns
+- Data
+
+## Like series we can have custom index here also 
+
+import pandas as pd
+
+df = pd.DataFrame(
+    {
+        "Name": ["Ashish", "Rahul", "Neha"],
+        "Age":,
+        "Branch": ["CSE", "ECE", "CSE"],
+        "Marks": [89, 76, 91]
+    }, 
+    index=["person_1", "person_2", "person_3"] 
+)
+
+print(df)
+
+output
+
+          Name  Age Branch  Marks
+person_1  Ashish   22    CSE     89
+person_2   Rahul   21    ECE     76
+person_3    Neha   22    CSE     91
+
+
+
+
+## LET TALK ABOUT DATAFRAME ATTRIBUTES
+
+import pandas as pd
+
+df = pd.DataFrame({
+    "Name": ["Ashish","Rahul","Neha"],
+    "Age": [22,21,22],
+    "Branch": ["CSE","ECE","CSE"],
+    "Marks": [89,76,91]
+})
+
+print(df)
+
+# now i want information about this dataframe more 
+
+1. Shape -> print(df.shape)  :- output -> (3,4) (thoda confusing lag sakta hai )
+2. Columns -> print(df.columns) -> Index(['Name', 'Age', 'Branch', 'Marks'], dtype='object')
+    This print the whole column list , like the name of the column 
+
+3. Index -> print(df.index) -> RangeIndex(start=0, stop=3, step=1) 
+    basically 0,1,2 -> default rows 
+
+4. Dtype -> print(df.dtypes) -> 
+    output 
+    Name      object
+
+    Age        int64
+
+    Branch    object
+
+    Marks      int64
+
+

@@ -1,0 +1,48 @@
+##Series 
+
+Series is a one-dimensional labeled array. 
+
+import pandas as pd
+
+s = pd.Series([10,20,30,40])
+
+print(s) 
+
+output 
+0    10
+1    20
+2    30
+3    40
+dtype: int64
+
+# pandas show the index while numpy does not .
+
+# print(s[2]) -> 30 
+
+# labeled index ??
+We can make the custom index in pandas
+
+marks = pd.Series(
+    [89,76,91],
+    index=["Ashish","Rahul","Neha"]
+)
+
+print(marks)
+
+output
+
+Ashish    89
+Rahul     76
+Neha      91
+dtype: int64
+ 
+ here the index 0,1,2 is changed to ashish rahul etc.
+
+ we can also access that ,
+ print(marks["ashish"])
+
+Features:
+- Supports custom indexes.
+- Can store int, float, string, bool.
+- Has dtype.
+- Elements can be accessed using index or label.
